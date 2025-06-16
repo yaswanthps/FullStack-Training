@@ -3,25 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>forms</title>
+    <title>About</title>
 </head>
 <body>
-    <form action="https://httpbin.org/post" method="post">
+    <h1>About This Website</h1>
+    <p>This website showcases a collection of top movies.</p>
+    <p>Feel free to explore the different sections to learn more about each movie.</p>
+    <form>
         <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required><br>
-        
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="department">Department:</label>
+        <input type="text" id="department" name="department" required><br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br><br>
         <label>Gender:</label>
-        <input type="radio" id="Female" name="Gender" value="Female" required>
-        <label for="Female">Female</label>
-        <input type="radio" id="Male" name="Gender" value="Male" required>
-          <label for="Male">Male</label>
-        <br>
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" rows="4" required></textarea>
-        
+        <input type="radio" id="female" name="gender" value="female" required>
+        <label for="female">Female</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="other" name="gender" value="other">
+        <label for="other">Other</label>
+        <br><br>
         <button type="submit">Submit</button>
     </form>
+    <table border="1">
+        <thead>
+            <tr>
+                <th scope="col">Movie Title</th>
+                <th scope="col">Genre</th>
+                <th scope="col">Year</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Inception</td>
+                <td>Sci-Fi</td>
+                <td>2010</td>
+            </tr>
+            <tr>
+                <td>The Godfather</td>
+                <td>Crime</td>
+                <td>1972</td>
+            </tr>
+            <tr>
+                <td>Parasite</td>
+                <td>Thriller</td>
+                <td>2019</td>
+            </tr>
+        </tbody>
+    </table>
 </body>
 </html>

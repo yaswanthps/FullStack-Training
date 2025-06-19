@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -33,4 +34,41 @@
         }
     </script>
 </body>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Rock Paper Scissor</h1>
+    <button onclick="game('rock')">Rock</button>
+    <button onclick="game('paper')">Paper</button>  
+    <button onclick="game('scissor')">Scissor</button>
+    <h1 id="result">Result</h1>
+    <script>
+       function game(userChoice) {
+            const choices = ['rock', 'paper', 'scissor'];
+            const computerChoice = choices[Math.floor(Math.random() * choices.length)];
+            let result;
+
+            if (userChoice === computerChoice) {
+                result = "It's a tie!";
+            } else if (
+                (userChoice === 'rock' && computerChoice === 'scissor') ||
+                (userChoice === 'paper' && computerChoice === 'rock') ||
+                (userChoice === 'scissor' && computerChoice === 'paper')
+            ) {
+                result = `You win! Computer chose ${computerChoice}.`;
+            } else {
+                result = `You lose! Computer chose ${computerChoice}.`;
+            }
+
+            document.getElementById('result').innerText = result;
+        }
+    </script>
+</body>
+>>>>>>> 09ef3a81e65c4e8ba72f93fe90ba5890727ea821
 </html>

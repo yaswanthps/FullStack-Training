@@ -1,0 +1,16 @@
+.navbar {
+  width: 100%;
+  background-color: #7ee9f2;
+  padding: 1rem 0;
+  display: flex;
+  justify-content:space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+body {
+  padding-top: px; /* height of the navbar */
+}

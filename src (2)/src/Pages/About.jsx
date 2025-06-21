@@ -1,12 +1,8 @@
 import Effects from "./Hooks/Effects";
 import State from "./Hooks/State";
-import { UserContext } from "./Hooks/UserContex";
-import { useContext } from "react";
 const About = () => {
-  const name = useContext(UserContext);
   return (
     <div>
-      <h1>Hi! {name}</h1>
       <h1>About Page</h1>
       <State />
       <Effects />
